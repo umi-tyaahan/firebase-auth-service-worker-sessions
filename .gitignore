@@ -1,0 +1,6 @@
+node_modules
+serviceAccountKeys.json
+app/config.js
+public/sw.js
+public/javascripts/*
+!dummy.txt

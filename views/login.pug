@@ -1,0 +1,17 @@
+extends layout
+
+block header-scripts
+  link(type="text/css", rel="stylesheet", href="https://cdn.firebase.com/libs/firebaseui/3.1.0/firebaseui.css")
+  script(src="/javascripts/login.js")
+
+block content
+  h1= title
+    p Welcome to #{title}
+    div(id="container")
+      h3 Session Management with Service Workers Demo
+      div(id="loading") Loading...
+      div(id="redirecting", class="hidden") Redirecting...
+      div(id="firebaseui-container")
+
+
+

@@ -1,0 +1,15 @@
+extends layout
+
+block header-scripts
+  script(src="/javascripts/sw-register.js")
+
+block content
+  h1= title
+  if user
+    p 🎉Welcome to #{user.displayName} 🎉
+    a(href='/users') userpage (this is secure) <br>    
+    a(href='/logout') Logout
+  else
+    p Welcome to #{title}
+    a(href='/login') Login
+
